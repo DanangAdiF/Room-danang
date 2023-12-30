@@ -1,0 +1,599 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --biru: rgb(9, 9, 83);
+}
+
+body {
+    background-color: rgb(112, 112, 112);
+}
+
+/* -----------------------NAVIGASI BAR UTAMA----------------------------- */
+
+.navigasiutama {
+    position: fixed;
+    background-color: rgb(9, 9, 83);
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 5px 7px 1px rgb(0 0 0 / 0.4), 0 5px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.logo {
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 25px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+#menu {
+    display: none;
+}
+
+.buttonmenu {
+    display: none;
+}
+
+.navbar {
+    float:right;
+    margin-right: 35px;
+}
+
+.navbar li {
+    background-color: blu;
+    padding: 0 15px;
+    position: relative;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 900;
+    margin-left: 30px;
+    float: left;
+    line-height: 50px;
+}
+
+li .menudrop {
+
+    width: 150px;
+    display: block;
+    margin-left: -35px;
+    font-size: 18px;
+    background-color: aqu;
+
+}
+
+.navigasiutama .navbar li ul.dropdown li {
+    display: block;
+    line-height: 35px;
+
+}
+
+.navigasiutama .navbar li ul.dropdown {
+    width: 150%;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    margin-left: -38px;
+    margin-top: -3px;
+    background-color: rgb(30, 30, 31);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navbar li:hover ul.dropdown {
+    display: block;
+}
+
+.navbar li a {
+    color: white;
+}
+
+li a.active, li a:hover {
+    color: orange;
+}
+
+.iconhome, .iconbantuan, .iconkontak {
+    display: none;
+}
+
+hr {
+    color: white;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.iconproduk {
+    font-size: 13px;
+    margin-left: 7px;
+}
+
+/* ---------------------NAVIGASI BAR UTAMA--------------------- */
+
+/* ---------------------ELEMENT LIST PRODUK---------------------------- */
+
+.element-utama {
+    display: flex;
+    padding-top: 50px;
+}
+
+.sidebar-diameter {
+    overflow: scroll;
+    background-color: var(--biru);
+    width: 290px;
+    height: 290px;
+    margin-top: 15px;
+    margin-left: 7px;
+    border-radius: 13px;
+}
+
+.sidebar-kategori label {
+    margin: 5px;
+    text-align: center;
+    display: block;
+    color: white;
+    font-family:sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.sidebar-paket {
+    overflow: scroll;
+    top: 400px;
+    background-color: var(--biru);
+    width: 290px;
+    height: 290px;
+    margin-top: 10px;
+    margin-left: 7px;
+    border-radius: 13px;
+}
+
+.list-paket ul li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 7px;
+}
+
+.list-diameter ul li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 7px;
+}
+
+.list-diameter ul li a:hover {
+    color:orange
+}
+
+.list-paket ul li a:hover {
+    color:orange
+}
+
+.element-list-produk-handle {
+    display: flex;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 9px;
+    width: 100%;
+}
+
+.produk-area {
+    display:flex;
+    background-color: var(--biru);
+    width: 99%;
+    margin: 7px 7px;
+    height: 230px;
+    border-radius: 13px;
+}
+
+.area-ket-gambar {
+    background-color: aqu;
+    margin: 10px;
+    height: 215px;
+    width: 180px;
+}
+.gambar img {
+    border-radius: 13px;
+    border: 5px solid orange;
+    width: 180px;
+    height: 180px;
+}
+
+.area-ket-gambar button {
+    border:none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 4px;
+    color: white;
+    background-color: var(--biru);
+}
+
+.area-ket-gambar button p {
+    margin-left:-10px;
+    margin-right: 10px;
+    display: inline;
+    font-size: 18px;
+}
+
+.area-ket-gambar button i.fa {
+
+    font-size: 20px;
+
+}
+
+.spesifikasi {
+    margin-left: -15px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.spesifikasi label {
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: 800;
+    margin-left: 15px;
+    display:block;
+    background-color: aqu;
+}
+
+.spesifikasi table {
+    margin-top: 5px;
+}
+
+.spesifikasi table tr td {
+    border: px solid white;
+    padding: 2px 15px;
+}
+.element-rating {
+    display: inline;
+    margin-left: 15px;
+}
+
+.checked {
+    color: orange;
+}
+
+.rating {
+    color: white;
+}
+
+.vertical {
+    border-left: 1px solid white;
+    padding: 5px;
+    margin-top: 15px;
+    height: 195px;
+    opacity: 50%;
+}
+
+
+
+.harga label {
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: 800;
+    margin-left: 15px;
+    display:block;
+}
+
+.harga table {
+    border-collapse: collapse;
+}
+
+.harga table td {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    color: white;
+    border-left: none solid white;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.521) ;
+}
+
+.payment {
+    margin-top: 5px;
+    background-color: rgb(35, 35, 121);
+    border-radius: 13px;
+    height: 75px;
+}
+
+.blok-pemesanan {
+    position: relative;
+    top: -4px;
+    left: 130px;
+}
+
+.blok-pemesanan.pemesanan {   
+}
+
+.linkpayment {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+    height: 46px;
+}
+
+/* ---------------------- ICON LINK WHATSAPP------------------------------------ */
+.whatsapp {
+    background-color: rgb(6, 172, 0);
+    border-radius: 30%;
+    box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+}
+
+.whatsapp img {
+    margin-top: -5px;
+    width: 35px;
+    color: white;
+    background-color: rgb(9, 255, 0);
+    border-radius: 30%;
+}
+
+.whatsapp img:hover {
+    transform: translateY(2px);
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* ---------------------- ICON LINK FACEBOOK------------------------------------ */
+
+.facebook {
+    background-color: rgb(1, 58, 182);
+    border-radius: 30%;
+    box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+}
+
+.facebook img {
+    margin-top: -5px;
+    width: 35px;
+    color: white;
+    background-color: rgb(0, 81, 255);
+    border-radius: 30%;
+}
+
+.facebook img:hover {
+    transform: translateY(2px);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* ---------------------- ICON LINK SHOPEE------------------------------------ */
+
+.shopee {
+    background-color: rgb(187, 128, 0);
+    border-radius: 30%;
+    box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+}
+
+.shopee img {
+    margin-top: -5px;
+    width: 35px;
+    color: white;
+    background-color: rgb(255, 174, 0);
+    border-radius: 30%;
+}
+
+.shopee img:hover {
+    transform: translateY(2px);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ---------------------- ICON LINK LAZADA------------------------------------ */
+
+.lazada {
+    background-color: rgb(0, 13, 196);
+    border-radius: 30%;
+    box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 12px 15px -10px rgba(0,0,0,0.75);
+}
+
+.lazada img {
+    margin-top: -5px;
+    width: 35px;
+    color: white;
+    background-color: rgb(0, 17, 255);
+    border-radius: 30%;
+}
+
+.lazada img:hover {
+    transform: translateY(2px);
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+/* ---------------------ELEMENT LIST PRODUK---------------------------- */
+
+/* ---------------------FOOTER GROUND BAR------------------------------- */
+footer {
+    background-color: rgb(30, 30, 31);
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 200px;
+}
+
+.judul-online-shop {
+    color: white;
+    font-family:sans-serif;
+    font-weight: 700;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+a.jangkaranchor {
+    color: white;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.element-jangkar {
+    display: inline-block;
+    width: 27px;
+    margin-left: 15px;
+    
+}
+
+a.jangkar:hover {
+    color: orange;
+}
+/* ---------------------FOOTER GROUND BAR------------------------------- */
+
+@media (max-width: 952px) {
+
+    /* ---------------------NAVIGASI BAR UTAMA UNTUK LAPTOP---------------------------- */
+
+    .navigasiutama {
+        background-color: rgb(9, 9, 83);
+        width: 100%;
+        height: 80px;
+    }
+    
+    .logo {
+        color: white;
+        font-family: 'Preahvihear', sans-serif;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 20px;
+    }
+
+    .navbar {
+        float:right;
+        margin-right: 35px;
+    }
+
+    .navbar li {
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: 900;
+        margin-left: 20px;
+        float: left;
+        line-height: 80px;
+    }
+
+    .navbar li a {
+        color: white;
+    }
+
+    li a.active, li a:hover {
+        color: orange;
+    }
+
+    .iconhome, .iconproduk, .iconbantuan, .iconkontak {
+        display: none;
+    }
+}
+
+/* ---------------------NAVIGASI BAR UTAMA UNTUK LAPTOP---------------------------- */
+
+@media (max-width: 610px) {
+
+    /* ---------------------NAVIGASI BAR UTAMA UNTUK SMARTPHONE/HP---------------------------- */
+
+    .navigasiutama {
+        background-color: rgb(9, 9, 83);
+        width: 100%;
+        height: 80px;
+    }
+    
+    label.logo {
+        color: white;
+        font-family: 'Preahvihear', sans-serif;
+        font-size: 27px;
+        line-height: 80px;
+        padding: 0 20px;
+    }
+
+    .navigasiutama .navbar {
+        position: fixed;
+        background-color:rgb(30, 30, 31);
+        width: 100%;
+        height: 100vh;
+        right: -200%;
+        transition: all .5s;
+        box-shadow: -5px 1px 10px -3px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -5px 1px 10px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: -5px 1px 10px -3px rgba(0,0,0,0.75);
+        z-index: 999;
+    }
+
+    .navigasiutama .navbar li {
+        font-family: cursive;
+        font-weight: 700;
+        font-size: 20px;
+        float:none;
+        margin-left: 10px;
+        line-height: 50px;
+    }
+
+    .iconhome, .iconproduk, .iconbantuan, .iconkontak {
+        margin: 0 10px;
+        display: block;
+        float:left;
+    }
+
+    .navbar li a {
+        color: white;
+    }
+
+    .navbar li a.active, .navbar li a:hover {
+        color: orange;
+    }
+
+    .buttonmenu:hover {
+        color: orange;
+    }
+
+    .buttonmenu {
+        position: relative;
+        right: 10px;
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-top: 25px;
+        margin-right: 20px;
+        float: right;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu:checked ~ .navbar {
+        right: -70%;
+    }
+
+    #menu:checked ~ .buttonmenu {
+        transform: rotate(45deg);
+        transition: all .5s;
+    }
+
+    .element-utama {
+        overflow-x: hidden;
+    }
+}
+
+/* ---------------------NAVIGASI BAR UTAMA UNTUK SMARTPHONE/HP---------------------------- */
